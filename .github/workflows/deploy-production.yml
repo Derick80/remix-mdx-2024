@@ -1,10 +1,9 @@
-name: Deploy to Staging
+name: Deploy to Production
 
 on:
   push:
     branches:
-      - development
-      - feature/**
+      - main
 
 jobs:
   deploy:
@@ -16,7 +15,7 @@ jobs:
       - name: Set up Fly.io
         uses: superfly/flyctl-actions/setup-flyctl@master
 
-      - name: Deploy to Fly.io Staging
-        run: flyctl deploy --config staging-fly.toml --remote-only
+      - name: Deploy to Fly.io Production
+        run: flyctl deploy --config production-fly.toml --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
