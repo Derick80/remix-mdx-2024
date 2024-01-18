@@ -7,10 +7,14 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+export default function Index () {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div >
       <h1>Welcome to Remix</h1>
+      <p>
+        This is a new Remix app. You can start editing this page immediately,
+        or explore the rest of the app structure first.
+      </p>
       <ul>
         <li>
           <a
