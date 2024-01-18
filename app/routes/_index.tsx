@@ -11,7 +11,9 @@ export default function Index () {
   return (
     <div >
       <h1>Welcome to Remix</h1>
-      <p>
+      <p
+        className='text-lg underline uppercase'
+      >
         This is a new Remix app. You can start editing this page immediately,
         or explore the rest of the app structure first.
       </p>
